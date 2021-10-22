@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="stylesheet" href="files/styles.css">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <title>Koło Fortuny</title>
+</head>
+<body>
+  <p class = "title">KOŁO FORTUNY</p>
+  <p class = "topic">Kategoria: </p>
+  <div class = "falseLetters"></div>
+  <div class = "alertDivParent"></div>
+  <form id = "inputContainer">
+    <input type="text" placeholder="Kategoria" id="topic">
+    <input type="password" placeholder="Hasło" id="slogan">
+    <button type="button" class="button" id="button">Zagraj</button>
+  </form>
+  <div id="container">
+
+  </div>
+  <div class = "bottomContainer">
+    <button type="button" class ="button secondaryButton" id="show">Pokaż hasło</button>
+    <button type="button" class ="button secondaryButton" id="newGame">Nowa Gra</button>
+    <button type="button" class ="button" id="randomNumbers">Losowe Litery</button>
+    <div class = "appear"><button type="button" class ="button" id="random">Kręć kołem</button></div>
+
+  </div>
+  <audio id="audioRandom">
+    <source src ="files/randomLetters.mp3" type="audio/mp3">
+  </audio>
+  <audio id="audioRandomEnd">
+    <source src ="files/End.mp3" type="audio/mp3">
+  </audio>
+  <script src = "files/app.js"></script>
+  <script>
+    var audio = new Audio('files/false.mp3');
+    var audioTrue = new Audio('files/true.mp3');
+    var audioFinal = new Audio('files/final.mp3');
+    var newSlogan = new Audio('files/newSlogan.mp3');
+  </script>
+</body>
+</html>
